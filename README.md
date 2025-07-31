@@ -1,7 +1,7 @@
 # Multi-Theme Switcher App
 
 A modern React-based web application with a dynamic theme switcher that allows users to switch between three distinct themes, each with unique layouts, fonts, spacing, and visual styles.
-
+https://superlative-rugelach-8d86a7.netlify.app/
 ## 🎨 Features
 
 ### Theme System
@@ -171,14 +171,6 @@ npm run test:e2e    # Run end-to-end tests
 ```bash
 npm run build
 ```
-
-### Deploy to Vercel
-1. Connect your GitHub repository to Vercel
-2. Configure build settings:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-3. Deploy automatically on push to main branch
-
 ### Deploy to Netlify
 1. Connect your GitHub repository to Netlify
 2. Configure build settings:
@@ -205,15 +197,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Framer Motion](https://www.framer.com/motion/) for animations
 - [React](https://reactjs.org/) for the UI library
 - [Redux Toolkit](https://redux-toolkit.js.org/) for state management
-
-## 📞 Support
-
-If you have any questions or need help with the application, please:
-
-1. Check the [Issues](../../issues) page for existing solutions
-2. Create a new issue with detailed description
-3. Contact the development team
-
----
 
 **Happy Coding! 🎉**
