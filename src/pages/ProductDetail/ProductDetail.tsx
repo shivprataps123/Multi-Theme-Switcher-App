@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 import { RootState } from '../../store/index';
 import { Product } from '../../store/slices/productsSlice';
@@ -12,7 +12,6 @@ import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
  */
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const dispatch = useDispatch();
   const currentTheme = useSelector((state: RootState) => state.theme.currentTheme);
   const { items: products, loading } = useSelector((state: RootState) => state.products);
   const [product, setProduct] = useState<Product | null>(null);

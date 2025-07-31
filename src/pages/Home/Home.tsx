@@ -33,7 +33,7 @@ const Home: React.FC = () => {
    */
   useEffect(() => {
     if (products.length > 0) {
-      const categories = Array.from(new Set(products.map((product: Product) => product.category as string)));
+      const categories = Array.from(new Set(products.map((product: Product) => product.category as string))) as string[];
       setAvailableCategories(['All', ...categories]);
     }
   }, [products]);
@@ -147,7 +147,6 @@ const Home: React.FC = () => {
                       ? 'bg-blue-600 text-white' 
                       : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                     }
-                    ${currentTheme === 'theme-2' && 'bg-theme2-accent text-white'}
                     ${currentTheme === 'theme-3' && selectedCategory === category 
                       ? 'bg-theme3-accent text-white' 
                       : 'bg-theme3-secondary text-theme3-text hover:bg-theme3-accent/20'
